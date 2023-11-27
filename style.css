@@ -10,18 +10,23 @@
 
 header{
   display: flex;
+  flex-wrap: wrap;
   height: 40px;
-  border-bottom: 2px solid black;
+  position: fixed;
+  z-index: 1;
+  top: 0;
+  background-color: beige;
+  box-shadow: 0px 2px #b8babb;
 }
 
 .nav h2{
   display: inline-block;
-  margin-left: 100px;
+  margin-left: 10vw;
   align-self: center;
 }
 
 .nav ul{
-   margin-left: 345px;
+   margin-left: 10vw;
    align-self: center;
 }
 
@@ -31,7 +36,7 @@ header{
   width: 60px;
   font-weight: bolder;
   font-size: larger;
-  margin-right: 40px;
+  margin-right: 3vw;
   margin-top: auto;
 }
 
@@ -40,28 +45,36 @@ header{
   color: black;
 }
 
+li a.active{
+  color: #066e48 !important;
+}
+
 .nav i{
-  font-weight: bolder;
+  font-size: x-large;
   margin-top: 4px;
-  margin-right: 100px;
+  margin-right: 10vw;
   align-self: center;
-  margin-left: 345px;
+  margin-left: 10vw;
 }
 
 .body{
-  background-color: red; 
   margin-top: 10%;
   display: flex;
   height: 400px;
   overflow: hidden;
-
+  
 }
 
 .link i{
   display: block;
   font-size: x-large;
-  margin-top: 50px;
+  margin-top: 60px;
   margin-left: 100px;
+  color: #5a69e8;
+}
+
+.link a{
+  text-decoration: none;
 }
 
 .Hello{
@@ -75,27 +88,146 @@ header{
 }
 
 .Contact{
-  margin-top: 30px;
+  margin-top: 60px;
   font-size: larger;
-  padding: 10px;
+  padding: 12px;
+  border-radius: 12px;
+  background-color: #5a69e8;
+}
+
+.Contact a{
   text-decoration: none;
-  border-radius: 10px;
+  color: #FFFFFF;
 }
 
 .Contact i{
-  transform: rotate(45);
+ transform: rotate(45deg) !important; 
+ display: inline-block;
 }
 
 .pic{
   margin-left: 200px;
-  /* border-radius: 70%; */
-  /* border: 2px solid black; */
   justify-content: center;  
-  /* overflow: hidden; */
-  margin-right: 100px;
+  margin-right: 150px;
+  display: inline-block;
+
 }
 
 .pic img{
   background-position: top;
   background-size: cover;
+  border-radius: 22px;
+}
+
+.About-Me{
+  margin-top: 100px;
+  margin-left: 300px;
+  font-size: larger;
+  padding: 12px;
+  color: #5a69e8;
+  font-weight: bold;
+  border: none;
+  background-color: inherit;
+}
+
+.About-Me a{
+  text-decoration: none;
+}
+
+.About-Me i{
+  font-size: larger;
+  font-weight: bolder;
+  align-self: center;
+}
+
+#About-Me{
+  margin-top: 130px;
+}
+
+#About-Me h2{
+  text-align: center;
+  font-size: 40px;
+}
+
+#About-Me h2 a{
+  text-decoration: none;
+}
+
+#About-Me p{
+  text-align: center;
+  font-size: larger;
+  font-weight: bold;
+}
+
+.flex{
+  display: flex;
+  margin-top: 50px;
+}
+
+#pic{
+  margin-left: 300px;
+  width: 400px;
+}
+
+.self{
+  margin-right: 150px;
+}
+
+.self > p{
+  margin-top: 80px;
+  width: 494 !important;
+  text-align: left !important;
+}
+
+.download-cv{
+  margin-top: 100px;
+  padding: 12px;
+  font-size: x-large;  
+  font-weight: bold;
+  background-color:  #5a69e8;
+  border-radius: 12px;
+}
+
+.download-cv a{
+  text-decoration: none;
+  color: #FFFFFF;
+}
+
+.download-cv i{
+  font-size: x-large;
+  font-weight: bold;
+  align-self: center;
+}
+
+#tech{
+  margin-top: 150px;
+}
+
+#tech h2{
+  text-align: center;
+  font-size: 40px;
+  font-weight: bolder;
+}
+
+#tech p{
+  text-align: center;
+  font-size: large;
+  font-weight: bold;
+}
+
+.logo{
+  background-color: red;
+  margin-top: 150px;
+  display: flex;
+  justify-content: space-evenly;
+  align-items: center;
+}
+
+.logo > div{
+  padding: auto;
+  line-height: 60px;
+  width: 200px;
+  margin: 40px;
+  font-size: 20px;
+  align-self: center;
 }
