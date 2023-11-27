@@ -216,7 +216,7 @@ li a.active{
 }
 
 .logo{
-  background-color: red;
+  /* background-color: red; */
   margin-top: 150px;
   display: flex;
   justify-content: space-evenly;
