@@ -8,86 +8,51 @@
   max-width: 80%;
 }
 
-header{
-  display: flex;
-  flex-wrap: wrap;
-  height: 40px;
-  position: fixed;
-  z-index: 1;
-  top: 0;
-  background-color: beige;
-  box-shadow: 0px 2px #b8babb;
+.navbar{
+  box-shadow: 0px 3px #b8babb;
 }
 
-.nav h2{
-  display: inline-block;
-  margin-left: 10vw;
-  align-self: center;
+.navbar-nav{
+  margin-left: 20rem;
 }
 
-.nav ul{
-   margin-left: 10vw;
-   align-self: center;
-}
-
-.nav ul li{
-  display: inline;
-  text-decoration: none;
-  width: 60px;
-  font-weight: bolder;
-  font-size: larger;
-  margin-right: 3vw;
-  margin-top: auto;
-}
-
-.nav ul li a{
-  text-decoration: none;
-  color: black;
-}
-
-li a.active{
+.active{
   color: #066e48 !important;
 }
 
-.nav i{
-  font-size: x-large;
-  margin-top: 4px;
-  margin-right: 10vw;
-  align-self: center;
-  margin-left: 10vw;
-}
 
 .body{
-  margin-top: 10%;
+  margin-top: 12%;
   display: flex;
-  height: 400px;
-  overflow: hidden;
-  
+  /* height: 30rem; */
+  /* overflow: hidden; */
 }
 
 .link i{
   display: block;
   font-size: x-large;
   margin-top: 60px;
-  margin-left: 100px;
+  /* margin-left: 3rem; */
   color: #5a69e8;
 }
+
+
 
 .link a{
   text-decoration: none;
 }
 
 .Hello{
-  margin-left: 170px;
+  margin-left: 3rem;
   margin-top: 50px;
   font-size: x-large;
 }
 
 .Hello p{
   margin-top: 20px;
-}
+} 
 
-.Contact{
+.Contact-button{
   margin-top: 60px;
   font-size: larger;
   padding: 12px;
@@ -95,22 +60,20 @@ li a.active{
   background-color: #5a69e8;
 }
 
-.Contact a{
+.Contact-button a{
   text-decoration: none;
   color: #FFFFFF;
 }
 
-.Contact i{
+.Contact-button i{
  transform: rotate(45deg) !important; 
  display: inline-block;
 }
 
 .pic{
-  margin-left: 200px;
+  margin-left: 10rem;
   justify-content: center;  
-  margin-right: 150px;
   display: inline-block;
-
 }
 
 .pic img{
@@ -119,8 +82,8 @@ li a.active{
   border-radius: 22px;
 }
 
-.About-Me{
-  margin-top: 100px;
+.scroll-down{
+  margin-top: 15rem;
   margin-left: 300px;
   font-size: larger;
   padding: 12px;
