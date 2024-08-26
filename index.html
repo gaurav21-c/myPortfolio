@@ -1,121 +1,907 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="en" oncontextmenu="return false;">
+  <head>
+    <meta charset="utf-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta
+      name="viewport"
+      content="width=device-width, initial-scale=1, maximum-scale=1"
+    />
+    <meta
+      name="keywords"
+      content="Full-Stack Developer, Web Developer, UI/UX Designer, Responsive Design, Custom Website Design, Clean Code Practices, PHP Developer, CodeIgniter Expert, Branding Solutions, E-Commerce Development, API Integration, Web Application Development, Custom Support, SEO-Friendly Websites, Front-End Developer, Back-End Developer, Tech Consultant, Mobile-First Design, Gaurav Chauhan, Novateqra
+	  "
+    />
+    <meta
+      name="description"
+      content="Explore the portfolio of Gaurav Chauhan, a full-stack developer and UI/UX designer specializing in custom web development, responsive design, and clean code practices. Offering comprehensive digital solutions, including branding, e-commerce development, and custom support. Discover professional, scalable, and user-friendly applications 
+	  "
+    />
+    <meta name="author" content="Gaurav Chauhan" />
+    <title>Personal Portfolio</title>
+    <link rel="shortcut icon" href="img/favicon.ico" />
+    <!-- Fonts -->
+    <link
+      href="https://fonts.googleapis.com/css?family=Open+Sans:300,400,500,600,700,800"
+      rel="stylesheet"
+    />
+    <link
+      href="https://fonts.googleapis.com/css?family=Josefin+Sans:100i,300,400,600,700"
+      rel="stylesheet"
+    />
 
-<head>
-  <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>Gaurav's Portfolio</title>
-  <link rel="stylesheet" href="style.css" />
+    <!-- Plugins -->
+    <link rel="stylesheet" href="css/plugins.css" />
 
-  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.1/font/bootstrap-icons.css" />
+    <!-- Core Style Css -->
+    <link rel="stylesheet" href="css/style.css" />
+  </head>
 
-  <script src="https://kit.fontawesome.com/55b378dd36.js" crossorigin="anonymous"></script>
+  <body oncontextmenu="return false;" >
+    <!-- Start Loading -->
+    <div class="loading">
+      <div class="text-center middle">
+        <div class="lds-ellipsis">
+          <div></div>
+          <div></div>
+          <div></div>
+          <div></div>
+        </div>
+      </div>
+    </div>
+    <!-- End Loading -->
 
-  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet"
-    integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous" />
-
-  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js"
-    integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM"
-    crossorigin="anonymous"></script>
-
-  <script src="index.js"></script>
-  
-</head>
-
-<body>
-  <div class="container">
-    <nav class="navbar navbar-expand-lg navbar-light bg-light fixed-top">
+    <!--  Start Navbar -->
+    <nav class="navbar navbar-expand-lg">
       <div class="container">
-        <a class="navbar-brand" href="#">
-          <h2>Gaurav</h2>
-        </a>
-        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarText"
-          aria-controls="navbarText" aria-expanded="false" aria-label="Toggle navigation">
-          <span class="navbar-toggler-icon"></span>
+        <!-- Logo -->
+        <a class="logo" href="#">Gaurav</a>
+
+        <button
+          class="navbar-toggler"
+          type="button"
+          data-toggle="collapse"
+          data-target="#navbarSupportedContent"
+          aria-controls="navbarSupportedContent"
+          aria-expanded="false"
+          aria-label="Toggle navigation"
+        >
+          <span class="icon-bar"><i class="fas fa-bars"></i></span>
         </button>
-        <div class="collapse navbar-collapse" id="navbarText">
-          <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+
+        <!-- navbar links -->
+        <div class="collapse navbar-collapse" id="navbarSupportedContent">
+          <ul class="navbar-nav ml-auto">
             <li class="nav-item">
-              <a class="nav-link active" aria-current="page" href="#Home">Home</a>
+              <a class="nav-link active" href="#" data-scroll-nav="0">Home</a>
             </li>
             <li class="nav-item">
-              <a class="nav-link" href="#About">About</a>
+              <a class="nav-link" href="#" data-scroll-nav="1">About</a>
             </li>
             <li class="nav-item">
-              <a class="nav-link" href="#Skills">Skills</a>
+              <a class="nav-link" href="#" data-scroll-nav="2">Services</a>
             </li>
             <li class="nav-item">
-              <a class="nav-link" href="#Portfolio">Portfolio</a>
+              <a class="nav-link" href="#" data-scroll-nav="3">Portfolio</a>
             </li>
+            <!-- <li class="nav-item">
+			        <a class="nav-link" href="#" data-scroll-nav="4">Testimonials</a>
+			      </li> -->
+            <!-- <li class="nav-item">
+			        <a class="nav-link" href="#" data-scroll-nav="5">Blog</a>
+			      </li> -->
             <li class="nav-item">
-              <a class="nav-link" href="#Contact-me">Contact-me</a>
+              <a class="nav-link" href="#" data-scroll-nav="6">Contact</a>
             </li>
           </ul>
-          <i class="fa-regular fa-moon"></i>
         </div>
-
       </div>
     </nav>
-    <div class="body container-fluid">
-      <div class="link">
-        <a href="https://www.linkedin.com/in/gaurav-chauhan-b29391243/" target="_blank"><i
-            class="fa-brands fa-linkedin-in"></i></a>
-        <a href="https://gauravc21609.github.io/myPortfolio/" target="_blank"><i class="fa-brands fa-dribbble"></i></a>
-        <a href="https://github.com/gauravc21609" target="_blank"><i class="fa-brands fa-github"></i></a>
-      </div>
-      <div class="Hello">
-        <h1>Hello !</h1>
-        <p>
-          My name is Gaurav Chauhan. Currently, I'd completed my Graduation in
-          Bachelor of Computer Application and I'm from Uttarakhand, India.
-        </p>
-        <button class="Contact-button">
-          <a href="#Contact me">Contact me <i class="bi bi-send"></i></a>
-        </button>
-      </div>
-      <div class="pic">
-        <img src="gaurav.png" />
-      </div>
-    </div>
-    <button class="scroll-down">
-      <a href="#About Me" class="text-decoration-none"><i class="bi bi-mouse"></i>Scroll Down<i class="bi bi-arrow-down-short"></i></a>
-    </button>
-    <div id="About-Me">
-      <h2><a href="#About">About Me</a></h2>
-      <p>A little About Me</p>
-      <div class="flex">
-        <div id="pic" class="pic">
-          <img src="gaurav1.JPG" width="400px" />
-        </div>
-        <div class="self">
-          <p>
-            My name is Gaurav.I'm a junior from India. I'm a tech enthusiast
-            and a learner. I believe in the power of Community and deeply
-            passionate about Web Development And Innovations.
-          </p>
-          <button class="download-cv">
-            <a href="Gaurav Chauhan.pdf" target="_blank">Download CV <i class="bi bi-download"></i></a>
-          </button>
+    <!-- End Navbar -->
+
+    <!--  Start Header -->
+    <header
+      class="header valign bg-img"
+      data-scroll-index="0"
+      data-overlay-dark="5"
+      data-background="img/bg.png"
+      data-stellar-background-ratio="0.5"
+    >
+      <div class="container">
+        <div class="row">
+          <div class="vertical-center full-width text-center caption">
+            <h2>I Love To Design</h2>
+            <h1 class="cd-headline clip">
+              <span class="blc">I Am </span>
+              <span class="cd-words-wrapper">
+                <b class="is-visible">Gaurav Chauhan</b>
+                <b>a Php Developer</b>
+                <b>a Designer</b>
+              </span>
+            </h1>
+          </div>
         </div>
       </div>
-    </div>
 
-    <div class="container-fluid mt-5" id="tech">
-      <h2>Tech Stack</h2>
-      <p>Tech I'm Familiar with</p>
-      <div class="row logo">
-        <div class="col p-3 bg-primary text-white fa-brands fa-html5">HTML</div>
-        <div class="col p-3 bg-dark text-white fa-brands fa-css3-alt">CSS</div>
-        <div class="col p-3 bg-primary text-white fa-brands fa-js">Javascript</div>
-        <div class="col p-3 bg-danger text-white fa-brands fa-git-alt">git & github</div>
+      <div class="arrow">
+        <a href="#" data-scroll-nav="1">
+          <i class="fas fa-chevron-down"></i>
+        </a>
       </div>
-      <div class="row logo">
-        <div class="col-sm-1 p-3 bg-danger text-white fa-brands fa-node">Node js</div>
+    </header>
+    <!-- End Header  -->
 
+    <!--  Start Hero -->
+    <section class="hero section-padding" data-scroll-index="1">
+      <div class="container">
+        <div class="row">
+          <div class="col-lg-5">
+            <div class="hero-img mb-md50">
+              <img src="img/hero.png" alt="" />
+            </div>
+          </div>
+          <div class="col-lg-7">
+            <div class="content">
+              <h4 class="title title-left">I Am UI / UX Designer</h4>
+              <p>
+                I am <span>Gaurav Chauhan.</span> I design fresh and easy-to-use
+                digital experiences by streamlining content, functionality and
+                clear path user interactions. I am doing a design balancing
+                beauty with usability, every element need to be justified. I
+                produce user-centred solutions that align with business goals,
+                taking ideas from wireframe right through to prototype hence
+                ensuring delivery of accessible and efficient digital products.
+              </p>
+              <p>
+                We’re full service which means we’ve got you covered on design
+                and content right through to digital. You’ll form a lasting
+                relationship with us, collaboration is central to everything we
+                do. We’ll push you out of your comfort zone from time-to-time.
+              </p>
+
+              <div class="social-icon">
+                <a href="https://gauravc21609.github.io/myPortfolio/">
+    								<span class="icon"><i class="fas fa-globe"></i></span>
+    							</a>
+                <a href="https://github.com/gauravc21609">
+    								<span class="icon"><i class="fab fa-github"></i></span>
+    							</a>
+                <!-- <a href="#0">
+                  <span class="icon"><i class="fab fa-instagram"></i></span>
+                </a> -->
+                <a href="https://www.linkedin.com/in/gaurav-chauhan-b29391243/">
+                  <span class="icon"><i class="fab fa-linkedin-in"></i></span>
+                </a>
+                <!-- <a href="#0">
+    								<span class="icon"><i class="fab fa-behance"></i></span>
+    							</a> -->
+                <!-- <a href="#0">
+    								<span class="icon"><i class="fab fa-vimeo-v"></i></span>
+    							</a> -->
+              </div>
+
+              <span class="buton text-center">
+                <a
+                  href="#0"
+                  front="Hire Me"
+                  back="&#xf1d8;"
+                  data-scroll-nav="6"
+                ></a>
+              </span>
+              <span class="buton buton-bord text-center">
+                <a
+                  href="CV.pdf"
+                  front="Download C.V"
+                  back="&#xf019;"
+                  download="CV.pdf"
+                ></a>
+              </span>
+            </div>
+          </div>
+        </div>
       </div>
-    </div>
-  </div>
-  </div>
-</body>
+    </section>
+    <!-- End Hero  -->
 
+    <!-- Start Resume -->
+    <section
+      class="resume bg-img"
+      data-overlay-dark="8"
+      data-background="img/b4.jpg"
+      data-scroll-index="1"
+    >
+      <div class="container">
+        <div class="row">
+          <div class="col-lg-3 col-sm-6">
+            <div class="item mb-md50">
+              <span class="icon icon-pencil"></span><br />
+              <h5 class="title title-left">Education</h5>
+              <ul>
+                <li>
+                  <h6>Hemvati Nandan Bahuguna Garhwal University</h6>
+                  <p>Bachelor of Computer Application</p>
+                </li>
+                <li>
+                  <h6>Himalaya Inter College, Choukori</h6>
+                  <p>10 + 2</p>
+                </li>
+                <li>
+                  <h6>Himalaya Inter College, Choukori</h6>
+                  <p>10</p>
+                </li>
+              </ul>
+            </div>
+          </div>
+          <div class="col-lg-4 col-sm-6">
+            <div class="item mb-md50">
+              <span class="icon icon-briefcase"></span><br />
+              <h5 class="title title-left">Experience</h5>
+              <ul>
+                <li>
+                  <h6>Front-End Developer</h6>
+                  <p>Riskbirbal Insurance Brokers Pvt. Ltd.</p>
+                </li>
+                <li>
+                  <h6>Front-end Intern</h6>
+                  <p>Campus Coder</p>
+                </li>
+                <!-- <li>
+    								<h6>Front-End Developer</h6>
+    								<p>Creative Design Studio</p>
+    							</li> -->
+              </ul>
+            </div>
+          </div>
+          <div class="col-lg-5">
+            <div class="item skills">
+              <span class="icon icon-layers"></span><br />
+              <h5 class="title title-left">My Skills</h5>
+
+              <div class="skill">
+                <h6>Web Design <span>90%</span></h6>
+                <div class="skills-progress">
+                  <span data-value="90%"></span>
+                </div>
+              </div>
+              <div class="skill">
+                <h6>Development <span>80%</span></h6>
+                <div class="skills-progress">
+                  <span data-value="80%"></span>
+                </div>
+              </div>
+              <div class="skill">
+                <h6>Branding <span>85%</span></h6>
+                <div class="skills-progress">
+                  <span data-value="85%"></span>
+                </div>
+              </div>
+              <div class="skill">
+    							<h6>Marketing <span>75%</span></h6>
+    							<div class="skills-progress"><span data-value='75%'></span></div>
+    						</div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+    <!-- End Resume -->
+
+    <!--  Start Services -->
+    <section class="services section-padding" data-scroll-index="2">
+      <div class="container">
+        <div class="row">
+          <div class="section-head full-width">
+            <h4 class="title">My Services</h4>
+          </div>
+
+          <div class="col-lg-4 col-md-6">
+            <div class="item mb-md50">
+              <span class="icon icon-laptop"></span>
+              <h6>Web Design</h6>
+              <p>
+                I offer custom website design, UI/UX design, responsive design,
+                and e-commerce site creation. I also provide services for
+                landing page design, website redesign, and ongoing maintenance.
+                My focus is on crafting visually appealing, user-friendly
+                websites that drive engagement, improve functionality, and align
+                with business goals. I also specialize in branding and visual
+                identity design.
+              </p>
+            </div>
+          </div>
+          <div class="col-lg-4 col-md-6 active bolt">
+            <div class="item mb-md50">
+              <span class="icon icon-layers"></span>
+              <h6>Development</h6>
+              <p>
+                I offer a range of services including custom web development,
+                full-stack application development, responsive design
+                integration, and e-commerce development. I specialize in
+                building scalable, secure, and performance-optimized websites
+                and applications. I also provide backend integration, API
+                development, and ongoing maintenance, ensuring your digital
+                solutions are robust, efficient, and aligned with your business
+                needs.
+              </p>
+            </div>
+          </div>
+          <div class="col-lg-4 col-md-6">
+            <div class="item mb-md50">
+              <span class="icon icon-megaphone"></span>
+              <h6>Branding</h6>
+              <p>
+                As a developer with expertise in branding, I provide
+                comprehensive digital branding solutions, including the
+                development of custom websites that reflect your brand’s
+                identity. I ensure your online presence aligns with your brand’s
+                values through cohesive design, functionality, and messaging.
+                From logo design and color schemes to UI/UX elements, I
+                integrate branding seamlessly into your web and app development
+                projects for a consistent and memorable user experience.
+              </p>
+            </div>
+          </div>
+          <div class="bord full-width"></div>
+          <div class="col-lg-4 col-md-6">
+            <div class="item mb-md50">
+              <span class="icon icon-shield"></span>
+              <h6>Clean Code</h6>
+              <p>
+                As a developer, I prioritize clean code practices, ensuring that
+                all projects are well-structured, readable, and maintainable. By
+                following industry standards and best practices, I write code
+                that is optimized, efficient, and easy to understand for future
+                development. Clean code not only improves performance but also
+                simplifies debugging and scaling, resulting in faster
+                development cycles and more robust applications.
+              </p>
+            </div>
+          </div>
+          <div class="col-lg-4 col-md-6 active">
+            <div class="item mb-sm50">
+              <span class="icon icon-mobile"></span>
+              <h6>Fully Responsive</h6>
+              <p>
+                As a fully responsible developer, I ensure every project is
+                delivered with the highest standards of quality, from clean code
+                to fully responsive design. I take ownership of the entire
+                development process, ensuring that your digital solutions are
+                not only functional but also secure, scalable, and aligned with
+                your business objectives. You can count on me for reliable,
+                timely, and professional service at every step.
+              </p>
+            </div>
+          </div>
+          <div class="col-lg-4 col-md-6">
+            <div class="item">
+              <span class="icon icon-gears"></span>
+              <h6>Custom Support</h6>
+              <p>
+                I offer custom support tailored to your specific needs. Whether
+                it's ongoing website maintenance, troubleshooting, feature
+                updates, or personalized enhancements, I provide dedicated
+                support to ensure your digital solutions remain optimized and
+                problem-free. My focus is on delivering timely and effective
+                assistance, so you can rely on a seamless experience with your
+                applications, ensuring they stay up-to-date and aligned with
+                your evolving requirements.
+              </p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+    <!-- End Services  -->
+
+    <!--  Start Numbers -->
+    <!-- <div
+      class="numbers bg-img"
+      data-stellar-background-ratio="0.5"
+      data-overlay-dark="8"
+      data-background="img/b3.jpg"
+    >
+      <div class="container">
+        <div class="row">
+          <div class="col-lg-3 col-md-6">
+            <div class="item mb-md50">
+              <span class="icon icon-happy"></span>
+              <h2 class="count">340</h2>
+              <p>Happy Customers</p>
+            </div>
+          </div>
+          <div class="col-lg-3 col-md-6">
+            <div class="item mb-md50">
+              <span class="icon icon-layers"></span>
+              <h2 class="count">950</h2>
+              <p>Projects Complated</p>
+            </div>
+          </div>
+          <div class="col-lg-3 col-md-6">
+            <div class="item mb-sm50">
+              <span class="icon icon-download"></span>
+              <h2 class="count">520</h2>
+              <p>Files Downloaded</p>
+            </div>
+          </div>
+          <div class="col-lg-3 col-md-6">
+            <div class="item">
+              <span class="icon icon-pencil"></span>
+              <h2 class="count">6350</h2>
+              <p>Lines Of Code</p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div> -->
+    <!-- End Numbers  -->
+
+    <!--  Start Portfolio -->
+    <section class="portfolio section-padding" data-scroll-index="3">
+      <div class="container">
+        <div class="row">
+          <!-- Section-Head -->
+          <div class="section-head full-width">
+            <h4 class="title">My Portfolio</h4>
+          </div>
+        </div>
+
+        <div class="row justify-content-center">
+          <!-- filter links -->
+          <div class="filtering text-center mb-50">
+            <span data-filter="*" class="active">All</span>
+            <span data-filter=".brand">Brand</span>
+            <span data-filter=".web">Design</span>
+            <span data-filter=".graphic">Graphic</span>
+          </div>
+
+          <!-- gallery -->
+          <div class="gallery full-width">
+            <!-- gallery item -->
+            <div class="col-md-6 col-lg-4 items graphic">
+              <div class="item-img">
+                <img src="img/portfolio/1.jpg" alt="image" />
+                <div class="item-img-overlay text-center valign">
+                  <div class="overlay-info vertical-center full-width">
+                    <h6>Design . Motion</h6>
+                    <h5>Crearive Design</h5>
+                  </div>
+                  <a href="img/portfolio/1.jpg" class="link">
+                    <i class="fas fa-eye"></i>
+                  </a>
+                </div>
+              </div>
+            </div>
+
+            <!-- gallery item -->
+            <div class="col-md-6 col-lg-4 items web">
+              <div class="item-img">
+                <img src="img/portfolio/2.jpg" alt="image" />
+                <div class="item-img-overlay text-center valign">
+                  <div class="overlay-info vertical-center full-width">
+                    <h6>Design . Motion</h6>
+                    <h5>Crearive Design</h5>
+                  </div>
+                  <a href="img/portfolio/2.jpg" class="link">
+                    <i class="fas fa-eye"></i>
+                  </a>
+                </div>
+              </div>
+            </div>
+
+            <!-- gallery item -->
+            <div class="col-md-6 col-lg-4 items graphic">
+              <div class="item-img">
+                <img src="img/portfolio/3.jpg" alt="image" />
+                <div class="item-img-overlay text-center valign">
+                  <div class="overlay-info vertical-center full-width">
+                    <h6>Design . Motion</h6>
+                    <h5>Crearive Design</h5>
+                  </div>
+                  <a href="img/portfolio/3.jpg" class="link">
+                    <i class="fas fa-eye"></i>
+                  </a>
+                </div>
+              </div>
+            </div>
+
+            <!-- gallery item -->
+            <div class="col-md-6 col-lg-4 items web">
+              <div class="item-img">
+                <img src="img/portfolio/4.jpg" alt="image" />
+                <div class="item-img-overlay text-center valign">
+                  <div class="overlay-info vertical-center full-width">
+                    <h6>Design . Motion</h6>
+                    <h5>Crearive Design</h5>
+                  </div>
+                  <a href="img/portfolio/4.jpg" class="link">
+                    <i class="fas fa-eye"></i>
+                  </a>
+                </div>
+              </div>
+            </div>
+
+            <!-- gallery item -->
+            <div class="col-md-6 col-lg-4 items brand">
+              <div class="item-img">
+                <img src="img/portfolio/5.jpg" alt="image" />
+                <div class="item-img-overlay text-center valign">
+                  <div class="overlay-info vertical-center full-width">
+                    <h6>Design . Motion</h6>
+                    <h5>Crearive Design</h5>
+                  </div>
+                  <a href="img/portfolio/5.jpg" class="link">
+                    <i class="fas fa-eye"></i>
+                  </a>
+                </div>
+              </div>
+            </div>
+
+            <!-- gallery item -->
+            <div class="col-md-6 col-lg-4 items brand">
+              <div class="item-img">
+                <img src="img/portfolio/6.jpg" alt="image" />
+                <div class="item-img-overlay text-center valign">
+                  <div class="overlay-info vertical-center full-width">
+                    <h6>Design . Motion</h6>
+                    <h5>Crearive Design</h5>
+                  </div>
+                  <a href="img/portfolio/6.jpg" class="link">
+                    <i class="fas fa-eye"></i>
+                  </a>
+                </div>
+              </div>
+            </div>
+
+            <div class="clearfix"></div>
+          </div>
+
+          <div class="col-md-12 text-center">
+            <span class="buton">
+              <a href="#0" front="View All" back="&#xf06e;"></a>
+            </span>
+          </div>
+        </div>
+      </div>
+    </section>
+    <!-- End Portfolio -->
+
+    <!-- Start Testimonails -->
+    <!-- <section
+      class="testimonials section-padding bg-img"
+      data-overlay-dark="8"
+      data-background="img/b2.jpg"
+      data-scroll-index="4"
+    >
+      <div class="container">
+        <div class="row">
+          
+          <div class="section-head full-width mb-50">
+            <span class="icon icon-quote"></span><br />
+            <h4 class="title">Testimonials</h4>
+          </div>
+
+          <div class="offset-md-1 col-md-10">
+            <div class="owl-carousel owl-theme text-center">
+              <div class="citem">
+                <p>
+                  Lorem Ipsum is simply dummy text of the printing and industry.
+                  Lorem Ipsum has been the industry's standard dummy, when an
+                  unknown printer took a galley of type a type specimen book.
+                </p>
+                <h5>Alex Smith</h5>
+                <h6>Envato Author</h6>
+              </div>
+              <div class="citem">
+                <p>
+                  Lorem Ipsum is simply dummy text of the printing and industry.
+                  Lorem Ipsum has been the industry's standard dummy, when an
+                  unknown printer took a galley of type a type specimen book.
+                </p>
+                <h5>Alex Smith</h5>
+                <h6>Envato Author</h6>
+              </div>
+              <div class="citem">
+                <p>
+                  Lorem Ipsum is simply dummy text of the printing and industry.
+                  Lorem Ipsum has been the industry's standard dummy, when an
+                  unknown printer took a galley of type a type specimen book.
+                </p>
+                <h5>Alex Smith</h5>
+                <h6>Envato Author</h6>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section> -->
+    <!-- End Testimonails -->
+
+    <!-- Start Blog -->
+    <!-- <section class="blog section-padding" data-scroll-index="5">
+      <div class="container">
+        <div class="row">
+          <div class="section-head full-width">
+            <h4 class="title">My Blog</h4>
+          </div>
+
+          <div class="owl-carousel owl-theme">
+            <div class="pitem">
+              <div class="post-img">
+                <a href="#0">
+                  <img src="img/blog/1.jpg" alt="" />
+                </a>
+                <a href="#0" class="tag">WordPress</a>
+              </div>
+              <div class="content">
+                <h3>
+                  <a href="#0"
+                    >The Best WordPress Real Estate Themes & Plugins</a
+                  >
+                </h3>
+                <p>
+                  Real estate is an uber-competitive marketplace full of
+                  businesses competing for the same set of consumers. They're
+                  all looking for …
+                </p>
+                <div class="info">
+                  <span class="more">
+                    <a href="#0">Read More</a>
+                  </span>
+                  <span class="by">
+                    <a href="#0">By : Admin</a>
+                  </span>
+                </div>
+              </div>
+            </div>
+            <div class="pitem">
+              <div class="post-img">
+                <a href="#0">
+                  <img src="img/blog/2.jpg" alt="" />
+                </a>
+                <a href="#0" class="tag">Trends</a>
+              </div>
+              <div class="content">
+                <h3>
+                  <a href="#0"
+                    >4 Deadly Sins of UI and UX Design You Need to Avoid</a
+                  >
+                </h3>
+                <p>
+                  It’s not wrong to say that perfection in web design is
+                  something that doesn't really exist. But that doesn't mean …
+                </p>
+                <div class="info">
+                  <span class="more">
+                    <a href="#0">Read More</a>
+                  </span>
+                  <span class="by">
+                    <a href="#0">By : Admin</a>
+                  </span>
+                </div>
+              </div>
+            </div>
+            <div class="pitem">
+              <div class="post-img">
+                <a href="#0">
+                  <img src="img/blog/3.jpg" alt="" />
+                </a>
+                <a href="#0" class="tag">Trends</a>
+              </div>
+              <div class="content">
+                <h3>
+                  <a href="#0"
+                    >The Best Advice for Novice Web Designers in 2018</a
+                  >
+                </h3>
+                <p>
+                  When you're just getting started, it's hard to know what
+                  advice to listen to, and what to ignore. Finding your …
+                </p>
+                <div class="info">
+                  <span class="more">
+                    <a href="#0">Read More</a>
+                  </span>
+                  <span class="by">
+                    <a href="#0">By : Admin</a>
+                  </span>
+                </div>
+              </div>
+            </div>
+            <div class="pitem">
+              <div class="post-img">
+                <img src="img/blog/4.jpg" alt="" />
+                <a href="#0" class="tag">ThemeForest</a>
+              </div>
+              <div class="content">
+                <h3>
+                  <a href="#0"
+                    >20 Stellar Science Fiction After Effects Templates</a
+                  >
+                </h3>
+                <p>
+                  We’ve assembled a collection of sci-fi After Effects templates
+                  most likely to induce awe and wonder and tried to pick …
+                </p>
+                <div class="info">
+                  <span class="more">
+                    <a href="#0">Read More</a>
+                  </span>
+                  <span class="by">
+                    <a href="#0">By : Admin</a>
+                  </span>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section> -->
+    <!-- End Blog -->
+
+    <!-- Start Contact -->
+    <section
+      class="contact section-padding bg-img"
+      data-overlay-dark="8"
+      data-background="img/b5.jpg"
+      data-scroll-index="6"
+    >
+      <div class="container">
+        <div class="row">
+          <!-- Section-Head -->
+          <div class="section-head full-width mb-50">
+            <h4 class="title">Get In Touch</h4>
+          </div>
+
+          <form class="form full-width" id="contact-form" method="post">
+            <div class="messages"></div>
+
+            <div class="controls">
+              <div class="row">
+                <div class="col-md-6">
+                  <div class="form-group">
+                    <input
+                      id="form_name"
+                      type="text"
+                      name="name"
+                      placeholder="Name *"
+                      required="required"
+                    />
+                  </div>
+                </div>
+
+                <div class="col-md-6">
+                  <div class="form-group">
+                    <input
+                      id="form_email"
+                      type="email"
+                      name="email"
+                      placeholder="Email *"
+                      required="required"
+                    />
+                  </div>
+                </div>
+              </div>
+              <div class="row">
+                <div class="col-md-12">
+                  <div class="form-group">
+                    <input
+                      id="form_subject"
+                      type="text"
+                      name="subject"
+                      placeholder="Subject"
+                    />
+                  </div>
+                </div>
+              </div>
+              <div class="row">
+                <div class="col-md-12">
+                  <div class="form-group">
+                    <textarea
+                      id="form_message"
+                      name="message"
+                      placeholder="Your Message *"
+                      rows="4"
+                      required="required"
+                    ></textarea>
+                  </div>
+                </div>
+              </div>
+              <div class="row">
+                <div class="col-md-12">
+                  <div class="form-group">
+                    <span class="buton buton-lg">
+                      <button
+                        type="submit"
+                        front="Send Message"
+                        back="&#xf35d;"
+                      ></button>
+                    </span>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </form>
+
+          <div class="info full-width">
+            <div class="row">
+              <div class="col-md-4">
+                <div class="item mb-sm50">
+                  <span class="icon icon-mobile"></span>
+                  <div class="cont">
+                    <h6>Phone</h6>
+                    <p>+91 73028 24332</p>
+                  </div>
+                </div>
+              </div>
+              <div class="col-md-4">
+                <div class="item mb-sm50">
+                  <span class="icon icon-envelope"></span>
+                  <div class="cont">
+                    <h6>Email</h6>
+                    <p>Gchauhan21609@gmail.com</p>
+                  </div>
+                </div>
+              </div>
+              <div class="col-md-4">
+                <div class="item">
+                  <span class="icon icon-map-pin"></span>
+                  <div class="cont">
+                    <h6>Address</h6>
+                    <p>Shramik Kunj,Noida Sector-66 , Uttar Pradesh 201307</p>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+    <!-- End Contact  -->
+
+    <!--  Start Footer -->
+    <footer class="footer">
+      <p>Copyright &copy; Gaurav || All Rights Reserved.</p>
+    </footer>
+    <!-- End Footer -->
+
+    <!-- jQuery -->
+    <script src="js/jquery-3.0.0.min.js"></script>
+    <script src="js/jquery-migrate-3.0.0.min.js"></script>
+
+    <!-- popper.min -->
+    <script src="js/popper.min.js"></script>
+
+    <!-- bootstrap -->
+    <script src="js/bootstrap.min.js"></script>
+
+    <!-- scrollIt -->
+    <script src="js/scrollIt.min.js"></script>
+
+    <!-- animated.headline -->
+    <script src="js/animated.headline.js"></script>
+
+    <!-- jquery.waypoints.min -->
+    <script src="js/jquery.waypoints.min.js"></script>
+
+    <!-- jquery.counterup.min -->
+    <script src="js/jquery.counterup.min.js"></script>
+
+    <!-- owl carousel -->
+    <script src="js/owl.carousel.min.js"></script>
+
+    <!-- jquery.magnific-popup js -->
+    <script src="js/jquery.magnific-popup.min.js"></script>
+
+    <!-- stellar js -->
+    <script src="js/jquery.stellar.min.js"></script>
+
+    <!-- isotope.pkgd.min js -->
+    <script src="js/isotope.pkgd.min.js"></script>
+
+    <!-- validator js -->
+    <script src="js/validator.js"></script>
+
+    <!-- custom scripts -->
+    <script src="js/scripts.js"></script>
+  </body>
 </html>
